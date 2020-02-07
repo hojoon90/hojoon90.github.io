@@ -1,1 +1,22 @@
 theme: jekyll-theme-minimal
+
+#Site Settings
+locale: "en-US"
+title: "이것저것 블로그"
+title_separator: "-"
+name: "알고리즘 공부"
+description: "aa"
+url: "https://hojoon90.github.io"
+baseurl: #서브경로가 있을 경우 기재
+repository: 
+teaser: #프로필?
+logo: #로고
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs: false # true, false (default)
+words_per_minute: 200
+comments: 
+  provider: #블로그 댓글 기능 false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname: #블로그 댓글 기능 https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
