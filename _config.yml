@@ -1,22 +1,41 @@
-theme: jekyll-theme-minimal
+# Site settings
+title:          Tale
+description:    "Minimal Jekyll theme for storytellers"
+baseurl:        "/tale"
+url:            "https://chesterhow.github.io"
 
-#Site Settings
-locale: "en-US"
-title: "이것저것 블로그"
-title_separator: "-"
-name: "알고리즘 공부"
-description: "aa"
-url: "https://hojoon90.github.io"
-baseurl: #서브경로가 있을 경우 기재
-repository: 
-teaser: #프로필?
-logo: #로고
-masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs: false # true, false (default)
-words_per_minute: 200
-comments: 
-  provider: #블로그 댓글 기능 false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname: #블로그 댓글 기능 https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         Chester How
+  url:          https://chester.how
+  email:        chesterhow@gmail.com
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale
