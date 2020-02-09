@@ -9,9 +9,9 @@ url:            "https://hojoon90.github.io"
 
 # Author
 author:
-  name:         Hojun, Choi
-  url:          hojoon90.github.io
-  email:        hojoon90@gmail.com
+  name:         Chester How
+  url:          https://chester.how
+  email:        chesterhow@gmail.com
 
 # Build settings
 markdown:       kramdown
