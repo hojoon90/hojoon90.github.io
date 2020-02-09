@@ -5,13 +5,13 @@ baseurl:        "/"
 url:            "https://hojoon90.github.io"
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+#google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Hojun, Choi
+  url:          hojoon90.github.io
+  email:        hojoon90@gmail.com
 
 # Build settings
 markdown:       kramdown
