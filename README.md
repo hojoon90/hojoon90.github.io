@@ -1,129 +1,61 @@
-# Tale
+# Kiko Now
 
-[![Gem Version](https://badge.fury.io/rb/tale.svg)](https://badge.fury.io/rb/tale)
+*Read this in other languages: [English](README.md), [한국어](README.ko.md).*
 
-Tale is a minimal Jekyll theme curated for storytellers. Checkout the demo [here](https://chesterhow.github.io/tale/).
+**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
-![Tale screenshot](http://i.imgur.com/pXZrtmo.png)
+**Kiko Now** is a Jekyll theme based on **[Jekyll Now](https://github.com/barryclark/jekyll-now)**, following the philosophy of **Jekyll Now**, which makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
 
-## Features
-- Easy installation
-- Compatible with GitHub Pages
-- Responsive design (looks just as good on mobile)
-- Syntax highlighting, with the help of Pygments
-- Markdown and HTML text formatting
-- Pagination of posts
-- [Disqus comments (can be enabled if needed)](#enabling-comments)
+![Kiko Now Theme Screenshot](/images/kiko-now-theme-screenshot.png "Kiko Now Theme Screenshot")
 
-## Installation
-There are 3 ways to install this theme
+## Quick Start
 
-1. Install it as a Ruby Gem (for self-hosted sites)
-2. Install it with the `jekyll-remote-theme` plugin (for GitHub Pages hosted sites)
-3. Fork the project directly
+### Step 1) Fork Jekyll Now to your User Repository
 
-### Ruby Gem method
-1. Add this line to your `Gemfile`:
+Fork this repo, then rename the repository to yourgithubusername.github.io.
 
-```ruby
-gem "tale"
+Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
+
+### Step 2) Customize and view your site
+
+Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
+
+Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon
+
+There are 3 different ways that you can make changes to your blog's files:
+
+1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
+2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
+3. Clone down your repository and make updates locally, then push them to your GitHub repository.
+
+![_config.yml](/images/config.png "_config.yml")
+
+### Step 3) Publish your first blog post
+
+Edit `/_posts/2017-10-08-hello-world.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+
+![First Post](/images/post-screenshot.png "First Post")
+
+You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+
+#### Frontmatter
 ```
-
-2. Install the theme's gems and dependencies:
-
-```bash
-$ bundle
-```
-
-3. In `_config.yml` add these lines:
-
-```yaml
-theme:      tale
-
-permalink:  /:year-:month-:day/:title
-paginate:   5
-```
-
-Remove any other `theme:` lines.
-
-4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
-
-5. In `about.md`, change the `layout:` field to `post`:
-
-```Markdown
+---
 layout: post
+title: "post title"
+tags: [tag1, tag2, tag3]
+comments: true
+---
 ```
 
-### GitHub Pages method
-1. Add these 2 lines in to your `Gemfile`:
+## Local Development
 
-```ruby
-gem "jekyll-remote-theme"
-gem "jekyll-paginate"
-```
+1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
+2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
+3. Serve the site and watch for markup/sass changes `jekyll serve`
+4. View your website at http://127.0.0.1:4000/
+5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
-2. Install the newly added gems:
+## Questions?
 
-```bash
-$ bundle
-```
-
-3. In `_config.yml` add these lines:
-
-```yaml
-remote_theme: chesterhow/tale
-
-permalink:    /:year-:month-:day/:title
-paginate:     5
-
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
-```
-
-Remove any other `theme:` or `remote_theme:` lines.
-
-4. Rename `index.md` to `index.html`. Without this, the `jekyll-paginate` gem will not work.
-
-5. In `about.md`, change the `layout:` field to `post`:
-
-```Markdown
-layout: post
-```
-
-### Fork method
-1. Fork this repository
-
-2. Delete the unnecessary files/folders: `CODE_OF_CONDUCT.md`, `LICENSE`, `README.md`, `tale.gemspec`
-
-3. Delete the `baseurl` line in `_config.yml`:
-
-```yaml
-baseurl:  "/tale"   # delete this line
-```
-
-## Usage
-Once you've installed the theme, you're ready to work on your Jekyll site. To start off, I would recommend updating `_config.yml` with your site's details.
-
-To build and serve your site, run:
-
-```bash
-$ bundle exec jekyll serve
-```
-
-And you're all set! Head over to http://127.0.0.1:4000/ to see your site in action.
-
-### Enabling Comments
-Comments are disabled by default. To enable them, look for the following line in `_config.yml` and change `jekyll-tale` to your site's Disqus id.
-
-```yml
-disqus: jekyll-tale
-```
-
-Next, add `comments: true` to the YAML front matter of the posts which you would like to enable comments for.
-
-## Contributing
-Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
-
-## License
-See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE)
+[Open an Issue](https://github.com/aweekj/kiko-now/issues/new) and let's chat!
