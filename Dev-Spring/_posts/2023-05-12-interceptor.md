@@ -11,7 +11,7 @@ comments: true
 * 아래 이미지 처럼 DispatcherServlet와 Controller 사이에서 동작
 * 스프링에서 동작하므로 모든 빈에 접근 가능.
 
-![spring-mvc](../images/flow.png)\
+![spring-mvc](../../images/flow.png)\
 (https://goddaehee.tistory.com/154)
 
 ## 요구 사항
