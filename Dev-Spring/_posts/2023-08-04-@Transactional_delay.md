@@ -1,4 +1,10 @@
-# @Transactional과 쓰기지연
+---
+layout: post
+title: "@Transactional과 쓰기지연"
+tags: [Spring]
+comments: true
+---
+
 
 ## 현상
 배치의 시작과 종료에 대한 상태를 DB에 실시간으로 저장할 일이 생겨, 상태를 실시간으로 저장하려 했으나 

@@ -1,4 +1,9 @@
-# instanceof 를 지양하자
+---
+layout: post
+title: "instanceof 를 지양하자"
+tags: [Spring]
+comments: true
+---
 
 * instanceof → 클래스 타입을 체크하는 연산자
 * instanceof 연산자는 주로 클래스들이 상속 관계일 때 사용 가능.
