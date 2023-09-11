@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "단방향과 양방향, 연관관계의 주인"
-tags: [Spring]
+tags: [Spring, JPA]
 comments: true
 ---
 
