@@ -4,6 +4,7 @@ title: "DB Lock 발생과 이슈 해결"
 tags: [Spring, JPA, Mysql]
 comments: true
 ---
+
 ## 문제점
 프로젝트 내에서 통계 데이터 갱신 중 DB Lock Timeout 이 발생하는 현상을 확인했다.  
 이로 인해 해당 Exception 때문에 정상적인 통계 갱신이 이루어지지 않았다.
