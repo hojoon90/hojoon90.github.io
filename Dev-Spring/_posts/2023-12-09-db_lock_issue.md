@@ -46,7 +46,7 @@ private void makeStatsData(args) {
 ```java
 @Transactional(propagation = Propagation.REQUIRES_NEW)
 public void deleteStatsDatas(Integer yyyymmdd) {
-	aStatRepository.deleteByYyyymmdd(yyyymmdd);
+    aStatRepository.deleteByYyyymmdd(yyyymmdd);
     bStatRepository.deleteByYyyymmdd(yyyymmdd);
     cStatRepository.deleteByYyyymmdd(yyyymmdd);
 }
@@ -153,9 +153,13 @@ select * from information_schema.INNODB_TRX;
 
 현재 통계 로직의 경우 통계 데이터 처리 시 한 곳이라도 문제가 생기면 모두 롤백 해주어야 한다.
 그렇기에 별도 트랜잭션으로 동작 할 필요성이 없어서 하나의 트랜잭션으로 묶어줌.
-또한, 삭제 쿼리를 바로 DB로 전달하기 위해 flush도 추가해주었다.
+~~또한, 삭제 쿼리를 바로 DB로 전달하기 위해 flush도 추가해주었다.~~
+flush의 경우 영속성 내의 쿼리를 반영하기 위해 사용한다. 하지만 아래 로직은 QueryDSL 로 작성되어있기 때문에
+영속성 콘텍스트를 통하지 않고 바로 쿼리가 날아간다. 해당 로직 이전에 영속성 콘텍스트에 존재하는 쿼리는 없으므로
+불필요한 flush 로직은 삭제했다. 또한 @Transactional 의 경우도 부모의 트랜잭션에 합쳐지므로 삭제하였다.
 
 ```java
+//과거 코드
 @Transactional
 public void deleteStatsDatas(Integer yyyymmdd) {
     aStatRepository.deleteByYyyymmdd(yyyymmdd);
@@ -167,7 +171,15 @@ public void deleteStatsDatas(Integer yyyymmdd) {
     cStatRepository.deleteByYyyymmdd(yyyymmdd);
     cStatRepository.flush();
 }
-```
+
+//수정된 코드
+public void deleteStatsDatas(Integer yyyymmdd) {
+    aStatRepository.deleteByYyyymmdd(yyyymmdd);
+    bStatRepository.deleteByYyyymmdd(yyyymmdd);
+    cStatRepository.deleteByYyyymmdd(yyyymmdd); 
+}
+``` 
+
 
 이후 통계 처리시 정상적으로 삭제와 등록 처리가 되는것을 확인했다.
 트랜잭션에 대해 제대로 알지 못하고 개발하면 위와 같은 이슈가 발생할 수 있다는 것을 이번에 깨달음…
