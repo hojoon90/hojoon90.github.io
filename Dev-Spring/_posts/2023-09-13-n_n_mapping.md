@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "다대다 매핑 한계와 극복"
-tags: [Spring, JPA, 다양한_연관관계]
+tags: [Spring, JPA, 다양한 연관관계]
 comments: true
 ---
 

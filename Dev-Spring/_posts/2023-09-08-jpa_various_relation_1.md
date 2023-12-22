@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "다양한 연관관계 매핑 1"
-tags: [Spring, JPA, 다양한_연관관계]
+tags: [Spring, JPA, 다양한 연관관계]
 comments: true
 ---
 
