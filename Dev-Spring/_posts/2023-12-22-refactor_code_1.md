@@ -137,16 +137,16 @@ List<RankChannelDtoInterface>findBySecondChannelPdocutRankData(@Param("keywordId
 **최적화 되지 않은 쿼리로 인한 속도 저하**
 
 조회하는 쿼리를 보면 단순 조회인 것 처럼 쿼리가 만들어져 있음. 하지만 실제 실행계획을 돌려보면 아래와 같이 조회 된다.
-![query_plan.png](..%2F..%2Fimages%2FpostImg%2Fquery_plan.png)
+![query_plan.png](../../images/postImg/query_plan.png)
 
 pir(PRODUCT_INFO_RAW) 조회 시 type이 ALL 로, 인덱스를 타지 않고 조회 되고 있는것을 알 수 있다. 물론 인덱스를 타지 않으면 성능이 저하 되긴 하겠지만,
 2만건 되는 데이터를 조회하는데 쿼리가 최대 8초까지 걸린다는 건 조금 이해가 되지 않았다.
 
 쿼리에 대한 이슈를 더 확인하던 중 아래와 같은 내용을 확인했다.
-![order_by.png](..%2F..%2Fimages%2FpostImg%2Forder_by.png)
+![order_by.png](../../images/postImg/order_by.png)
 [https://okky.kr/questions/502945](https://okky.kr/questions/502945)
 
-![order_by2.png](..%2F..%2Fimages%2FpostImg%2Forder_by2.png)
+![order_by2.png](../../images/postImg/order_by2.png)
 [https://okky.kr/questions/502945](https://okky.kr/questions/502945)
 
 둘다 5년전답변이긴 하지만... 문제는 order by 부분에 있었다.
