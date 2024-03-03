@@ -1,4 +1,10 @@
-# DispatcherServlet과 FrontController
+---
+layout: post
+title: "DispatcherServlet과 FrontController"
+tags: [Spring]
+comments: true
+---
+
 
 ## FrontController 패턴
 기존 서블릿을 이용하여 구현한 컨트롤러는 아래와 같은 공통 로직들이 들어간다.
