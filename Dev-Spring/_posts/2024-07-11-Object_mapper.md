@@ -63,7 +63,7 @@ ObjectMapper objectMapper = new ObjectMapper()
 User user; 
 try{
     //readValue는 JsonProcessingException, JsonMappingException 예외를 던지므로, 해당 예외의 최상위 예외인 IOException으로 잡아준다.
-    user = objectMapper.readValue(content, User.class);
+    user = objectMapper.readValue(response, User.class);
 } catch (IOException ie){
     log.error("IOException", ie);
 }
