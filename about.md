@@ -7,9 +7,11 @@ permalink: /about/
 # 9년차 서버 백엔드 개발자<br>최 호준 입니다.
 
 ---
-Spring Framework 기반의 9년차 서버 백엔드 개발자이며, 대기업 시스템 및 대용량 트래픽 시스템의 개발과 유지보수 업무를 했습니다. 
-유지보수성이 높은 코드를 작성하려는 것을 좋아하며, 작성한 코드에 대한 피드백을 적극 수용합니다.  
-꾸준한 발전을 위해 지속적으로 개발에 대한 공부를 하려 노력합니다.
+Spring Framework 기반의 9년차 서버 백엔드 개발자이며, 대기업 시스템 및 대용량 트래픽 시스템의 개발과 유지보수 업무를 했습니다.
+유지보수성이 높은 코드를 작성하려는 것을 좋아하며, 작성한 코드에 대한 피드백에 언제나 열려있습니다.  
+기술부채에 대해 해결하고 싶어하고 레거시 코드를 안정적으로 고쳐나갑니다.  
+더욱 발전하기 위해 꾸준히 개발공부를 하려 노력합니다.
+
 
 # Work Experience.
 
@@ -124,150 +126,211 @@ Spring Framework 기반의 9년차 서버 백엔드 개발자이며, 대기업 �
 * 차세대 Headend 시스템 개발 참여.
 
 
-# Project
+# Project.
 
 --- 
 
 ## 위메프/티몬 컬쳐 통합
-2024.04 - 2024.7  
-큐텐테크놀로지
+*2024.04 - 2024.7*  
+*큐텐테크놀로지*
 
+**주요 작업**
 - 위메프와 티몬의 컬쳐 사이트 통합 프로젝트 개발 진행
 - 데이터의 사이트별 노출 로직 개발
 - 전시 / 랭킹 / 관람후기 / 로그인 처리
 - 어드민 페이지 통합 계정 로그인 처리 개발 및 기존 계정 마이그레이션 처리
 - 어드민 로그인 레거시 코드 개선 및 리팩터링
 
-## 롱테일  
-2023.09 - 2023.12  
-엠코퍼레이션
+**기술 스택**  
+- Java, Spring boot, MySQL, MyBatis, Jenkins, ELK
 
+## 롱테일  
+*2023.09 - 2023.12*  
+*엠코퍼레이션*
+
+**주요 작업**
 - 실제 구매 데이터에 기반 키워드별 상품 트렌드 분석 웹앱의 전체 설계 진행
 - 상품에 대한 분석데이터 가공 로직 구현
 - 각 상품들에 대한 순위 변동 로직 구현
 - 네이버 오픈 API 연동을 통해 분석 데이터 구성 로직 구현
 - 분석 데이터 가공 시 발생하던 병목구간 확인 후 코드 수정으로 속도 개선 (2s -> 15ms)
 
-## WhenSday
-2023.04 - 2023.08  
-엠코퍼레이션
+**기술 스택**
+- Java, Spring boot, JPA, MySQL, Redis, CI/CD, Docker, Nginx
 
+## WhenSday
+*2023.04 - 2023.08*  
+*엠코퍼레이션*
+
+**주요 작업**
 - 쇼핑몰들의 이벤트를 모아 보여주는 앱의 전체 설계 진행
 - 쇼핑몰 별 EP 연동 로직 구현
 - 카페24등의 호스팅 사이트 API 연동을 통해 상품 자동 연동 로직 구현
 - 앱 전체 통계 적재 로직 구현
 - 서버에서 FCM을 통해 앱에 PUSH하는 기능 구현
 - 이벤트 제공 API의 속도 저하 원인 분석 후 코드 및 쿼리 수정으로 속도 개선 (1.2s -> 450ms)
+- [홈페이지](https://whensday.co.kr)
+
+**기술 스택**
+- Java, Spring boot, JPA, MySQL, Redis, CI/CD, Docker, Nginx
 
 ## PC 스토아
-2023.01 - 2023.03  
-엠코퍼레이션
+*2023.01 - 2023.03*  
+*엠코퍼레이션*
 
+**주요 작업**
 - PC 프로그램들을 제공하는 웹앱의 전체 설계 진행
 - 프로그램별 카테고리 구분 로직 구현
 - 운영자가 세팅하는 큐레이션 프로그램 제공 로직 구현
+- [홈페이지](https://pcstoa.com)
+
+**기술 스택**
+- Java, Spring boot, JPA, MySQL, Redis, CI/CD, Docker, Nginx
 
 ## DSP  
-2022.07 - 2022.12    
-엠코퍼레이션
+*2022.07 - 2022.12*    
+*엠코퍼레이션*
 
+**주요 작업**
 - 사용자의 쇼핑 이력을 통해 광고 배너를 제공하는 시스템
 - 기존 설계의 변경 진행 (모놀리식 -> MSA) - 시스템 고도화에 따른 분리
 - 시스템을 분리하여 API 통신으로 처리되도록 개선
 - Kafka를 이용하여 메세지 큐 방식을 이용하여 추후 대용량 메세지 처리에 용이하도록 개선
 
-## HotelHub (HHub)
-2022.02 - 2022.06  
-엠코퍼레이션
+**기술 스택**
+- Java, Spring boot, Jooq, MySQL, Kafka, MongoDB, CI/CD, Docker
 
+## HotelHub (HHub)
+*2022.02 - 2022.06*  
+*엠코퍼레이션*
+
+**주요 작업**
 - 호텔과 숙박예약 사이트 간의 중계를 통해 편하게 숙박 사이트들을 관리할 수 있는 시스템 개 발 참여
 - 호텔 API 간 연동 및 연계된 숙박 사이트를 확인할 수 있는 로직 구현
 - 예약 현황, API 요청에 대한 통계 API 구현
 
-## MTap  
-2021.08 - 2022.02  
-엠코퍼레이션
+**기술 스택**
+- Java, Spring boot, Jooq, MySQL, MongoDB, CI/CD, Docker, Nginx, Vue.js
 
+## MTap  
+*2021.08 - 2022.02*  
+*엠코퍼레이션*
+
+**주요 작업**
 - 쇼핑몰 내에 프레임 형태로 사용자에게 추천할 만한 상품을 제공하는 시스템 개발 참여
 - 사용자에 맞는 상품 제공 API 구현
 - 상품을 좀 더 다양하게 노출할 수 있는 가중치 로직 구현
 
-## 인사이트 A/B 테스트
-2021.05 - 2021.08  
-인라이플
+**기술 스택**
+- Java, Spring boot, Jooq, MySQL, Redis, CI/CD, Docker, Nginx, Vue.js
 
+## 인사이트 A/B 테스트
+*2021.05 - 2021.08*  
+*인라이플*
+
+**주요 작업**
 - 인사이트 내부 프레임 사용에 대한 A/B 테스트 시스템 설계 및 개발
 - 테스트 대상에 대한 그룹화 로직 구현
 - 프레임 별 통계 데이터 적재 및 비교를 위한 API 구현
 
-## 인사이트 기능 고도화
-2020.08 - 2021.05   
-인라이플
+**기술 스택**
+- Java, Spring boot, MyBatis, MySQL, Redis, Kafka, ELK
 
+
+## 인사이트 기능 고도화
+*2020.08 - 2021.05*   
+*인라이플*
+
+**주요 작업**
 - 커스텀 프레임 기능 구현
 - 추천 키워드 제공 기능 구현
 - 네이버 바로가기, 프로모션 데이터 연동 로직 구현
 
-## 모비온 인사이트 유지보수
-2020.07 - 2021.08  
-인라이플
+**기술 스택**
+- Java, Spring boot, MyBatis, MySQL, Redis, Kafka
 
+## 모비온 인사이트 유지보수
+*2020.07 - 2021.08*  
+*인라이플*
+
+**주요 작업**
 - 사용자에 대한 추천 상품 데이터를 받아와 프레임 형태로 제공하는 시스템의 API 유지보수
 - API에 대한 전반적인 성능 확인 및 이슈 발생 시 신속하게 대응
 - 상품 API 연동 시 속도가 저하되는 원인 확인 후 Redis 도입으로 속도 개선
 - Kafka 호출 시 간헐적으로 쌓이지 않던 데이터 확인 후 정상 적재 되도록 수정
 
-## B tv 차세대 H/E 시스템
-2019.01 - 2019.06   
-지나웍스
+**기술 스택**
+- Java, Spring boot, MyBatis, MySQL, Redis, Kafka
 
+## B tv 차세대 H/E 시스템
+*2019.01 - 2019.06*   
+*지나웍스*
+
+**주요 작업**
 - SK B tv 신규 UI 시스템인 NXPG, PSS 5.0, EUXP 프로젝트 참여.
 - 프로젝트 구성 및 개발 진행 (개인화 추천)
 - 개인화 데이터를 위한 Redis-Cluster 구성 및 연동 API 개발
 
-## B tv 차세대 사용자 정보 조회 시스템 개발
-2018.03 ~ 2018.07  
-지나웍스
+**기술 스택**
+- Java, Spring Frameworks, MyBatis, Oracle, Redis, MongoDB
 
+## B tv 차세대 사용자 정보 조회 시스템 개발
+*2018.03 ~ 2018.07*  
+*지나웍스*
+
+**주요 작업**
 - 차세대 B tv UI 를 위한 PSS 사용자 정보 시스템 고도화 진행
 - 기존 xml 제공에서 JSON 형식으로 데이터 제공
 - 쿼리 조회를 통해 사용자 가입날짜 및 가입상품명에 대한 데이터 제공
 
-## B tv H/E 통합그리드 및 통합시놉시스 고도화
-2016.10 ~ 2017.02   
-지나웍스
+**기술 스택**
+- Java, Spring Frameworks, MyBatis, Oracle, Redis, MongoDB
 
+## B tv H/E 통합그리드 및 통합시놉시스 고도화
+*2016.10 ~ 2017.02*   
+*지나웍스*
+
+**주요 작업**
 - 시놉시스 통합을 위해 기존 로직 수정 후 제공 I/F 수정
 - 기존 화질별로 나뉘어 있던 데이터를 합쳐서 조회하는 쿼리 작성
 - 데이터 통합 후 정합성 검수 진행
 - 프로모션 메뉴 추가에 의한 쿼리 수정 및 제공 I/F 개발
 
-## B tv H/E 개인화 데이터
-2016.04 ~ 2016.08  
-지나웍스
+**기술 스택**
+- Java, Spring Frameworks, MyBatis, Oracle, Redis, MongoDB
 
+## B tv H/E 개인화 데이터
+*2016.04 ~ 2016.08*  
+*지나웍스*
+
+**주요 작업**
 - 파일 형식의 개인화 데이터 처리 기능 구현
 - Redis-Cluster 를 이용한 대량 개인화 데이터 캐싱 처리
 - Redis-Cluster 제어를 위한 운영툴 개발
 - 개인화 데이터 조회 API 개발
 
-## Sk B tv 유지보수 진행
-2015.10 - 2020.07  
-지나웍스
+**기술 스택**
+- Java, Spring Frameworks, MyBatis, Oracle, Redis, Redis-cluster, MongoDB
 
+## Sk B tv 유지보수 진행
+*2015.10 - 2020.07*  
+*지나웍스*
+
+**주요 작업**
 - H/E 시스템 전반에 대한 유지보수 업무 처리 
 - 사용자 셋탑에 대한 정보 관리 시스템 유지보수
 - 유지보수 업무를 통해 장애 처리, VOC 응대, 정기 시스템 모니터링, 이슈 해결 등을 진행.
 - 장애 발생시 신속대응 및 처리로 실시간 서비스 제공.
 - 장애 발생 원인 파악 후 재발 방지를 위한 개선작업으로 동일 장애 발생 방지.
 
+**기술 스택**
+- Java, Spring Frameworks, MyBatis, Oracle, Redis, MongoDB
 
-# Skill
+# Skills.
 
 ---
 
-**Backend**
-
+### Backend
 * **JAVA**
 * **Spring Framework**
   * Spring Boot, Spring Batch, Spring Security, Spring MVC, Spring Data JPA/Redis
@@ -275,8 +338,7 @@ Spring Framework 기반의 9년차 서버 백엔드 개발자이며, 대기업 �
 * **MySQL** / Oracle
 * **Redis / MongoDB**
 
-**DevOps**
-
+### DevOps
 * **Docker**
 * Gitlab, Gitlab CI/CD, Jenkins
 * Kafka 
@@ -284,29 +346,23 @@ Spring Framework 기반의 9년차 서버 백엔드 개발자이며, 대기업 �
 * Pinpoint, Scouter 
 * Elasticsearch
 
-**Frontend**
-
+### Frontend
 * Vue.js 
 * JavaScript 
 * JQuery, AJAX
 
-**collaboration tool**
-
+### Collaboration tool
 * Notion 
 * Slack 
 * Jira, Confluence, Bitbucket 
 * Figma
 
 
-# 개인 사항
+# Personal.
 
 ---
 
-**생년월일**
-
-1990.12.13
-
-**학력**
+### 학력
 
 강원대학교 독어독문학과  
 2009.03 - 2015.02
@@ -315,4 +371,6 @@ Spring Framework 기반의 9년차 서버 백엔드 개발자이며, 대기업 �
 2006.03 - 2009.02
 
 ### Contact me
-[hojoon90@gmail.com](mailto:hojoon90@gmail.com)
+github: [github](https://github.com/hojoon90)  
+blog: [hojoon90.github.io](https://hojoon90.github.io)  
+email: [hojoon90@gmail.com](mailto:hojoon90@gmail.com)
